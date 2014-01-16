@@ -26,12 +26,12 @@ import java.awt.Color;
  * it moves. <br />
  * The implementation of this class is testable on the AP CS A and AB exams.
  */
-public class JumpingBug extends Actor
+public class Jumper extends Actor
 {
     /**
      * Constructs a red bug.
      */
-    public JumpingBug()
+    public Jumper()
     {
         setColor(Color.RED);
     }
@@ -40,7 +40,7 @@ public class JumpingBug extends Actor
      * Constructs a bug of a given color.
      * @param bugColor the color for this bug
      */
-    public JumpingBug(Color bugColor)
+    public Jumper(Color bugColor)
     {
         setColor(bugColor);
     }
