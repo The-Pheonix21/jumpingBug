@@ -40,7 +40,7 @@ public class Jumper extends Actor
      * Constructs a bug of a given color.
      * @param bugColor the color for this bug
      */
-    public Jumper(Color bugColor)
+    public JumperBug(Color bugColor)
     {
         setColor(bugColor);
     }
@@ -98,7 +98,7 @@ public class Jumper extends Actor
         if (!gr.isValid(next))
             return false;
         Actor neighbor = gr.get(next);
-        return (neighbor == null) //|| (neighbor instanceof Flower);
+        return (neighbor == null); //|| (neighbor instanceof Flower);
         // ok to move into empty location or onto flower
         // not ok to move onto any other actor
     }
