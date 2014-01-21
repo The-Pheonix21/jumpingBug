@@ -14,8 +14,9 @@
  * @author Cay Horstmann
  */
 
-package info.gridworld.actor;
+//package info.gridworld.actor;
 
+import info.gridworld.actor.Actor;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
 
@@ -98,7 +99,7 @@ public class Jumper extends Actor
         if (!gr.isValid(next))
             return false;
         Actor neighbor = gr.get(next);
-        return (neighbor == null) //|| (neighbor instanceof Flower);
+        return (neighbor == null); //|| (neighbor instanceof Flower);
         // ok to move into empty location or onto flower
         // not ok to move onto any other actor
     }
