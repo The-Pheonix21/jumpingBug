@@ -41,7 +41,7 @@ public class Jumper extends Actor
      * Constructs a bug of a given color.
      * @param bugColor the color for this bug
      */
-    public Jumper(Color bugColor)
+    public JumperBug(Color bugColor)
     {
         setColor(bugColor);
     }
