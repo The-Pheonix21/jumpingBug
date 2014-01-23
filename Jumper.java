@@ -69,15 +69,16 @@ public class Jumper extends Actor
      * Moves the bug forward, putting a flower into the location it previously
      * occupied.
      */
-    public void move()
+    public void jump()
     {
         Grid<Actor> gr = getGrid();
         if (gr == null)
             return;
         Location loc = getLocation();
         Location next = loc.getAdjacentLocation(getDirection());
-        if (gr.isValid(next))
-            moveTo(next);
+        Location twoSpeces = next.getAdjacentLocation(getDirection());
+        if (gr.isValid(twoSpaces))
+            moveTo(twoSpacest);
         else
             removeSelfFromGrid();
         // Flower flower = new Flower(getColor());
@@ -89,7 +90,7 @@ public class Jumper extends Actor
      * contains a flower.
      * @return true if this bug can move.
      */
-    public boolean canMove()
+    public boolean canJump()
     {
         Grid<Actor> gr = getGrid();
         if (gr == null)
